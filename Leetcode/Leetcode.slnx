@@ -4,4 +4,5 @@
   <Project Path="189. Rotate Array/189. Rotate Array.csproj" />
   <Project Path="55. Jump Game/55. Jump Game.csproj" />
   <Project Path="58. Length of Last Word/58. Length of Last Word.csproj" />
+  <Project Path="88. Merge Sorted Array/88. Merge Sorted Array.csproj" />
 </Solution>
