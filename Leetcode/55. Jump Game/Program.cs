@@ -1,12 +1,12 @@
 ﻿/*You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.*/
 
-Solution solution = new();
-Console.WriteLine(solution.CanJump(new int[] { 2, 3, 1, 1, 4 })); // True
-Console.WriteLine(solution.CanJump(new int[] { 2, 5, 0, 0 }));  // True
-Console.WriteLine(solution.CanJump(new int[] { 3, 2, 1, 0, 4 })); // False
-Console.WriteLine(solution.CanJump(new int[] { 2, 0, 0 })); // True
+JumpGame jumpGame = new();
+Console.WriteLine(jumpGame.CanJump(new int[] { 2, 3, 1, 1, 4 })); // True
+Console.WriteLine(jumpGame.CanJump(new int[] { 2, 5, 0, 0 }));  // True
+Console.WriteLine(jumpGame.CanJump(new int[] { 3, 2, 1, 0, 4 })); // False
+Console.WriteLine(jumpGame.CanJump(new int[] { 2, 0, 0 })); // True
 
-class Solution
+class JumpGame
 {
     public bool CanJump(int[] nums)
     {

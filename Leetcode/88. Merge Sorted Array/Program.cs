@@ -7,15 +7,15 @@
  To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
  */
 
-Solution solution = new Solution();
-solution.MergeWithLinq(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3); // 1 2 2 3 5 6
-solution.MergeWithLinq(new int[] { 1 }, 1, new int[] { }, 0); // 1
-solution.MergeWithLinq(new int[] { 0 }, 0, new int[] { 1 }, 1); // 1
-solution.Merge(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3); // 1 2 2 3 5 6
-solution.Merge(new int[] { 1 }, 1, new int[] { }, 0); // 1
-solution.Merge(new int[] { 0 }, 0, new int[] { 1 }, 1); // 1
+MergedSortedArray mergedSortedArray = new MergedSortedArray();
+mergedSortedArray.MergeWithLinq(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3); // 1 2 2 3 5 6
+mergedSortedArray.MergeWithLinq(new int[] { 1 }, 1, new int[] { }, 0); // 1
+mergedSortedArray.MergeWithLinq(new int[] { 0 }, 0, new int[] { 1 }, 1); // 1
+mergedSortedArray.Merge(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3); // 1 2 2 3 5 6
+mergedSortedArray.Merge(new int[] { 1 }, 1, new int[] { }, 0); // 1
+mergedSortedArray.Merge(new int[] { 0 }, 0, new int[] { 1 }, 1); // 1
 
-public class Solution
+public class MergedSortedArray
 {
     public void MergeWithLinq(int[] numbers1, int idxNumbers1, int[] numbers2, int idxNumbers2)
     {

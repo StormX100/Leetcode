@@ -4,12 +4,12 @@ using System.Text;
 
 namespace _36._Valid_Sudoku
 {
-    public class Solution
+    public class ValidSudoku
     {
         private const int SUDOKU_LENGHT = 9;
         private const int SUDOKU_BOX_LENGHT = 3;
 
-        public bool IsValidSudoku(string[][] board)
+        public bool IsValid(string[][] board)
         {
             for (int i = 0; i < SUDOKU_LENGHT; i++)
             { 

@@ -2,11 +2,11 @@
  * Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
  * */
 
-var sol = new Solution();
-sol.Rotate(new int[] { 1, 2, 3, 4, 5, 6, 7 }, 3); // 5,6,7,1,2,3,4
-sol.Rotate(new int[] { -1, -100, 3, 99 }, 2); // 3,99,-1,-100
+var rotateArray = new RotateArray();
+rotateArray.Rotate(new int[] { 1, 2, 3, 4, 5, 6, 7 }, 3); // 5,6,7,1,2,3,4
+rotateArray.Rotate(new int[] { -1, -100, 3, 99 }, 2); // 3,99,-1,-100
 
-public class Solution
+public class RotateArray
 {
     public void Rotate(int[] numbers, int steps)
     {

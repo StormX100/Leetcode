@@ -3,11 +3,11 @@
   You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
  */
 
-Solution solution = new Solution();
-Console.WriteLine(solution.GetMaxProfit(new int[] { 7, 1, 5, 3, 6, 4 })); //5
-Console.WriteLine(solution.GetMaxProfit(new int[] { 7, 6, 4, 3, 1 })); //0
+StockProfit stockProfit = new StockProfit();
+Console.WriteLine(stockProfit.GetMaxProfit(new int[] { 7, 1, 5, 3, 6, 4 })); //5
+Console.WriteLine(stockProfit.GetMaxProfit(new int[] { 7, 6, 4, 3, 1 })); //0
 
-public class Solution
+public class StockProfit
 {
     public int GetMaxProfit(int[] prices)
     {
@@ -36,7 +36,6 @@ public class Solution
                 {
                     maxProfit = prices[j] - prices[i];
                 }
-
             }
         }
 

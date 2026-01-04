@@ -2,17 +2,17 @@
     Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 */
 
-Solution solution = new Solution();
-Console.WriteLine(solution.GetRomanToInt("I")); // 1
-Console.WriteLine(solution.GetRomanToInt("II")); // 2
-Console.WriteLine(solution.GetRomanToInt("V")); // 5
-Console.WriteLine(solution.GetRomanToInt("IV")); // 4
-Console.WriteLine(solution.GetRomanToInt("X")); // 10
-Console.WriteLine(solution.GetRomanToInt("IX")); // 9
+RomanToInteger romanToInteger = new RomanToInteger();
+Console.WriteLine(romanToInteger.Get("I")); // 1
+Console.WriteLine(romanToInteger.Get("II")); // 2
+Console.WriteLine(romanToInteger.Get("V")); // 5
+Console.WriteLine(romanToInteger.Get("IV")); // 4
+Console.WriteLine(romanToInteger.Get("X")); // 10
+Console.WriteLine(romanToInteger.Get("IX")); // 9
 
-public class Solution
+public class RomanToInteger
 {
-    public int GetRomanToInt(string romanNumber)
+    public int Get(string romanNumber)
     {
         Dictionary<char, int> romanToInteger = new Dictionary<char, int>() { { 'I', 1 }, { 'V', 5 }, { 'X', 10 }, { 'L', 50 }, { 'C', 100 }, { 'D', 500 }, { 'M', 1000 } };
         int sum = 0;

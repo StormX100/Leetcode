@@ -3,14 +3,14 @@
  A word is a maximal consisting of non-space characters only.
 */
 
-Solution solution = new Solution();
-Console.WriteLine(solution.GetLengthOfLastWord("luffy is still joyboy")); //6
-Console.WriteLine(solution.GetLengthOfLastWord("   fly me   to   the moon  ")); //4
+LenthOfLastWord lengthOfLastWord = new LenthOfLastWord();
+Console.WriteLine(lengthOfLastWord.Get("luffy is still joyboy")); //6
+Console.WriteLine(lengthOfLastWord.Get("   fly me   to   the moon  ")); //4
 
 
-public class Solution
+public class LenthOfLastWord
 {
-    public int GetLengthOfLastWord(string text)
+    public int Get(string text)
     {
         return text.Trim().Split(" ").Last().Length;
     }

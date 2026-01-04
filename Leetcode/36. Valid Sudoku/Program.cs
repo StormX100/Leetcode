@@ -18,8 +18,8 @@ string[][] validBoard =
 ,[".",".",".","4","1","9",".",".","5"]
 ,[".",".",".",".","8",".",".","7","9"]];
 
-Solution solution = new Solution();
-Console.WriteLine(solution.IsValidSudoku(validBoard)); // true
+ValidSudoku solution = new ValidSudoku();
+Console.WriteLine(solution.IsValid(validBoard)); // true
 
 string[][] boardWithDuplicateNumbersInRows =
 [["5","5",".",".","7",".",".",".","."]
@@ -32,7 +32,7 @@ string[][] boardWithDuplicateNumbersInRows =
 ,[".",".",".","4","1","9",".",".","5"]
 ,[".",".",".",".","8",".",".","7","9"]];
 
-Console.WriteLine(solution.IsValidSudoku(boardWithDuplicateNumbersInRows)); // false
+Console.WriteLine(solution.IsValid(boardWithDuplicateNumbersInRows)); // false
 
 string[][] boardWithDuplicateNumbersInColumns =
 [["5","3",".",".","7",".",".",".","."]
@@ -45,7 +45,7 @@ string[][] boardWithDuplicateNumbersInColumns =
 ,[".",".",".","4","1","9",".",".","5"]
 ,[".",".",".",".","8",".",".","7","9"]];
 
-Console.WriteLine(solution.IsValidSudoku(boardWithDuplicateNumbersInColumns)); // false
+Console.WriteLine(solution.IsValid(boardWithDuplicateNumbersInColumns)); // false
 
 string[][] boardWithDuplicateNumbersInBoxes =
 [[".", ".", ".", ".", "5", ".", ".", "1", "."],
@@ -58,4 +58,4 @@ string[][] boardWithDuplicateNumbersInBoxes =
 [".", "2", ".", "9", ".", ".", ".", ".", "."],
 [".", ".", "4", ".", ".", ".", ".", ".", "."]];
 
-Console.WriteLine(solution.IsValidSudoku(boardWithDuplicateNumbersInBoxes)); // false
+Console.WriteLine(solution.IsValid(boardWithDuplicateNumbersInBoxes)); // false

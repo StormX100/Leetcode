@@ -8,8 +8,8 @@
 */
 
 int[][] board = [[0, 1, 0], [0, 0, 1], [1, 1, 1], [0, 0, 0]]; // [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
-GameOfLife solution = new GameOfLife();
-solution.Play(board);
+GameOfLife gameOfLife = new GameOfLife();
+gameOfLife.Play(board);
 
 
 int width = board.GetLength(0);
